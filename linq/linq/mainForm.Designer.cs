@@ -59,7 +59,7 @@
             this.editTable_btn.Name = "editTable_btn";
             this.editTable_btn.Size = new System.Drawing.Size(164, 23);
             this.editTable_btn.TabIndex = 2;
-            this.editTable_btn.Text = "Редактировать таблицу";
+            this.editTable_btn.Text = "Просмотреть таблицу";
             this.editTable_btn.UseVisualStyleBackColor = true;
             this.editTable_btn.Click += new System.EventHandler(this.editTable_btn_Click);
             // 
