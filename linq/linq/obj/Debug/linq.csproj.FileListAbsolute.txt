@@ -35,3 +35,5 @@ C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.pdb
 C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.addTableForm.resources
 C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.columnSpecForm.resources
 C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.mainForm.resources
+C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.deleteTableForm.resources
+C:\Users\SunRay\Documents\GitHub\linq\linq\linq\obj\Debug\linq.editTableForm.resources

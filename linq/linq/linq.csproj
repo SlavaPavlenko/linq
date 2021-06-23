@@ -116,6 +116,18 @@
     <Compile Include="columnSpecForm.Designer.cs">
       <DependentUpon>columnSpecForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="deleteTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteTableForm.Designer.cs">
+      <DependentUpon>deleteTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editTableForm.Designer.cs">
+      <DependentUpon>editTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="columnSpecForm.resx">
       <DependentUpon>columnSpecForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteTableForm.resx">
+      <DependentUpon>deleteTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editTableForm.resx">
+      <DependentUpon>editTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>

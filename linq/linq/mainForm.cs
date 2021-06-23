@@ -15,9 +15,12 @@ namespace linq
 {
     public partial class mainForm : Form
     {
-        private SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
+        public static SqlConnection sqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["DBConnectionString"].ConnectionString);
         addTableForm addTableForm;
         public delegate void addTableDelegate(string name, ObjectCollection collection);
+        deleteTableForm deleteTableForm;
+        public delegate void deleteTableDelegate(string name);
+        editTableForm editTableForm;
         public mainForm()
         {
             InitializeComponent();
@@ -50,7 +53,30 @@ namespace linq
             }
             command += ")";
             SqlCommand cmd = new SqlCommand(command, sqlConnection);
-            var a = cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
+        }
+
+        private void deleteTable_btn_Click(object sender, EventArgs e)
+        {
+            deleteTableForm = new deleteTableForm(new deleteTableDelegate(deleteTable));
+            deleteTableForm.Show();
+        }
+        private void deleteTable(string name)
+        {
+            string command = "drop table " + name;
+            SqlCommand cmd = new SqlCommand(command, sqlConnection);
+            try {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e) {
+                MessageBox.Show(e.Message);
+            }
+        }
+
+        private void editTable_btn_Click(object sender, EventArgs e)
+        {
+            editTableForm = new editTableForm();
+            editTableForm.Show();
         }
     }
 }
